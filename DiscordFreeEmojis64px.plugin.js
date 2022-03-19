@@ -141,7 +141,7 @@ function Start() {
     }
 
     function replaceEmoji(parseResult, emoji) {
-        parseResult.content = parseResult.content.replace(`<${emoji.animated ? "a" : ""}:${emoji.originalName || emoji.name}:${emoji.id}>`, emoji.url.split("?")[0] + "?size=64");
+        parseResult.content = parseResult.content.replace(`<${emoji.animated ? "a" : ""}:${emoji.originalName || emoji.name}:${emoji.id}>`, emoji.url.split("?")[0] + "?size=64&quality=lossless");
     }
 
     parseHook = function() {
